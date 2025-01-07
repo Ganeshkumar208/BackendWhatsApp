@@ -12,8 +12,8 @@ export class WhatsappService {
         const authToken = this.configService.get<string>('TWILIO_AUTH_TOKEN');
 
         // More specific logging to check if ConfigService is loaded correctly
-        console.log('TWILIO_ACCOUNT_SID from Config:', accountSid);
-        console.log('TWILIO_AUTH_TOKEN from Config:', authToken);
+        // console.log('TWILIO_ACCOUNT_SID from Config:', accountSid);
+        // console.log('TWILIO_AUTH_TOKEN from Config:', authToken);
 
         if (!accountSid || !authToken) {
             throw new Error('Twilio configuration is missing.');
